@@ -21,5 +21,5 @@ app.use(indexRoutes) //le indico que se este set de rutas
 app.use(express.static(join(__dirname, "public"))) //desde esta URLL se sirven los archivos estaticos
 
 
-app.listen(3000) //lanzo el servidor
-console.log("server corriendo en el puerto> ", 3000)
+app.listen(process.env.PORT || 3000) //lanzo el servidor
+console.log("server corriendo en el puerto: ", process.env.PORT || 3000)
