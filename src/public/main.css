@@ -1,0 +1,27 @@
+
+
+body{
+    background-color: #202020;
+    color: #f2f2f2;
+}
+
+
+p{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.cancion-titulo{
+    font-size: 1.85em;
+
+}
+
+.cancion-texto{
+    font-size: 0.95em;
+}
+
+.cancion-firma{
+    font-size: 0.85em;
+    color:#c5c5c5;
+    font-style: italic;"
+}
