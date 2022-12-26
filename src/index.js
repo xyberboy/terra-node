@@ -20,6 +20,12 @@ app.set("view engine", "ejs") //le digo que voy a utilizar este motor de plantil
 app.use(indexRoutes) //le indico que se este set de rutas
 app.use(express.static(join(__dirname, "public"))) //desde esta URLL se sirven los archivos estaticos
 
+//Capture All 404 errors
+app.use(function (req, res, next){
+	res.status(404).render("404.ejs", { tituloPagina: "O M G !!! - page not found"} );
+});
+
+
 
 app.listen(process.env.PORT || 3000) //lanzo el servidor
 console.log("server corriendo en el puerto: ", process.env.PORT || 3000)
